@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-JPGENKP_SERVER2017.DataMartVentas.sa"
+  DTS:DTSID="{4100B2D4-8A3D-440C-9FE0-471111F0A641}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-JPGENKP\SERVER2017;User ID=sa;Initial Catalog=DataMartVentas;Application Name=SSIS-ETL_VENTAS-{4100B2D4-8A3D-440C-9FE0-471111F0A641}DESKTOP-JPGENKP\SERVER2017.DataMartVentas.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAY3OolACYVkWGRWqpS6D2/wAAAAACAAAAAAAQZgAAAAEAACAAAADLSw6qQsFLsR4tCfgreJALZqfEJo/zn9cFVPhS/tUbnAAAAAAOgAAAAAIAACAAAABTzPvR5+6zf5y4r5aJS1O1AFNV7Q99OKXQ6CbwYMmc2IAAAAB0J08groLbzgmYgqGyrNEiwxmiMb+1e8cJ+oVYMJVA2YGBasgYsb0uvQlL//f9/pv13lUPA8gul19ezaBXFDxy0A56b93i+HG4q0Tg+e6KPwaxJYKItLOed2hGn4o1aFUnuOkJmE95HI3zoR/DYnEzw3GGIwAal/pAuc2/5Y/Ke0AAAADpgBgXU4jYdrIRadahQmr2j1JfiyMvlTPUA3DMU8/W6bbzSlftfOOytyp1BKxr+wPA/laPPazgptB9xknWtXNZ</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

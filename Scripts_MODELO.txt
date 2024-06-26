@@ -1,0 +1,57 @@
+CREATE DATABASE [DataMartVentas]
+GO
+USE [DataMartVentas]
+GO
+
+-- Dimensión Producto
+CREATE TABLE DimProducto (
+    ProductoID INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Categoría NVARCHAR(100),
+    SubCategoría NVARCHAR(100)
+);
+
+-- Dimensión Cliente
+CREATE TABLE DimCliente (
+    ClienteID INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Apellido NVARCHAR(100),
+    Email NVARCHAR(100)
+);
+
+-- Dimensión Tiempo
+CREATE TABLE DimTiempo (
+    TiempoID INT PRIMARY KEY,
+    Fecha DATE,
+    Año INT,
+    Mes INT,
+    Día INT,
+    NombreMes NVARCHAR(20),
+    NombreDia NVARCHAR(20)
+);
+
+-- Dimensión Territorio de Ventas
+CREATE TABLE DimTerritorio (
+    TerritorioID INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Grupo NVARCHAR(100)
+);
+
+-- Tabla de Hechos de Ventas
+
+CREATE TABLE FactVentas (
+    VentaID INT PRIMARY KEY,
+    ProductoID INT,
+    ClienteID INT,
+    Fecha DATE,
+    TiempoID INT,
+    TerritorioID INT,
+    Cantidad INT,
+    PrecioUnitario DECIMAL(18, 2),
+    Total DECIMAL(18, 2),
+    Ganancia DECIMAL(18, 2)
+	FOREIGN KEY (ProductoID) REFERENCES DimProducto(ProductoID),
+    FOREIGN KEY (ClienteID) REFERENCES DimCliente(ClienteID),
+    FOREIGN KEY (TiempoID) REFERENCES DimTiempo(TiempoID),
+    FOREIGN KEY (TerritorioID) REFERENCES DimTerritorio(TerritorioID)
+);

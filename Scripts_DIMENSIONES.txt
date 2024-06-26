@@ -1,0 +1,78 @@
+LIMPIAR MODELO DIMENSIONAL
+-------------------------------------------------------------------
+DELETE  FROM FactVentas
+DELETE  FROM DimTiempo
+DELETE  FROM DimTerritorio
+DELETE  FROM DimProducto
+DELETE  FROM DimCliente
+
+-------------------------------------------------------------------
+--DIM_PRODUCTO
+-------------------------------------------------------------------
+SELECT 
+    P.ProductID,
+    P.Name,
+    PC.Name AS Categoria,
+    PSC.Name AS SubCategoria
+FROM 
+    Production.Product P
+    INNER JOIN Production.ProductSubcategory PSC ON P.ProductSubcategoryID = PSC.ProductSubcategoryID
+    INNER JOIN Production.ProductCategory PC ON PSC.ProductCategoryID = PC.ProductCategoryID
+-------------------------------------------------------------------
+--DIM_CLIENTE
+-------------------------------------------------------------------
+SELECT 
+    C.CustomerID,
+    P.FirstName,
+    P.LastName,
+    E.EmailAddress
+FROM 
+    Sales.Customer C
+    INNER JOIN Person.Person P ON C.PersonID = P.BusinessEntityID
+    INNER JOIN Person.EmailAddress E ON P.BusinessEntityID = E.BusinessEntityID
+-------------------------------------------------------------------
+--DIM_TIEMPO
+-------------------------------------------------------------------
+SELECT DISTINCT
+	CONVERT(INT,CONVERT(VARCHAR(12), OrderDate, 112)) ID,
+    CAST(OrderDate AS DATE) AS Fecha,
+    YEAR(OrderDate) AS Año,
+    MONTH(OrderDate) AS Mes,
+    DAY(OrderDate) AS Día,
+    DATENAME(MONTH, OrderDate) AS NombreMes,
+    DATENAME(WEEKDAY, OrderDate) AS NombreDia
+FROM 
+    Sales.SalesOrderHeader;
+-------------------------------------------------------------------
+DIM_TERRITORIO
+-------------------------------------------------------------------
+SELECT 
+    TerritoryID,
+    Name,
+    Group
+FROM 
+    Sales.SalesTerritory;
+
+-------------------------------------------------------------------
+--FACT_VENTAS
+-------------------------------------------------------------------
+SELECT 
+SOD.SalesOrderDetailID,  
+SOD.ProductID,
+SOH.CustomerID,
+CAST(SOH.OrderDate AS DATE) AS Fecha,
+CONVERT(INT,CONVERT(VARCHAR(12), OrderDate, 112)) IDTIEMPO,
+SOH.TerritoryID,
+SOD.OrderQty,
+SOD.UnitPrice,
+SOD.LineTotal
+FROM 
+    Sales.SalesOrderDetail SOD
+    INNER JOIN Sales.SalesOrderHeader SOH ON SOD.SalesOrderID = SOH.SalesOrderID;
+
+
+
+
+
+
+
