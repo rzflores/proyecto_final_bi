@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Data Mart Ventas</Id>
+            <Name>Data Mart Ventas</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAY3OolACYVkWGRWqpS6D2/wAAAAAiAAAARABhAHQAYQAgAE0AYQByAHQAIABWAGUAbgB0AGEAcwAAABBmAAAAAQAAIAAAAFPe85U5reSPcVgcQrT/PqSsfaJweavgaqH2BLa6I/qHAAAAAA6AAAAAAgAAIAAAAM8bDp/jVqsZSHozTv0JqG0DpAV9CLFgfhTu4F4X2pAqEAAAANLWygVqwbLwDT0ESvdlVTdAAAAAggUkd5m6KrA0we8+JbbkcWW4PQzgVSOv09WdwHd9/IRheGhwqbljKnYbCMTj8yqgty+6vvz8kuM0AEydx3EPrQ==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Data Mart Ventas</Id>
+            <Name>Data Mart Ventas</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAY3OolACYVkWGRWqpS6D2/wAAAAAiAAAARABhAHQAYQAgAE0AYQByAHQAIABWAGUAbgB0AGEAcwAAABBmAAAAAQAAIAAAAM1qLit0RQlt8ZKhQDc+4fub9sCCykV0PSsWvoz9/G96AAAAAA6AAAAAAgAAIAAAAAmYGLxg0oBUlR1g+uvpMMAJg2bYZrgHolBz3rlMJxBTIAAAAPWIa/WmumvLILUTmYCItvda+BaBgy+tBfZBIoTiy4i/QAAAAAiGFqORS4twBsqXhFQK/Bfce3J6PyWet/kLT7vTsTHRniG8aja+8jclzgiL1Aa2ejyJh/tTyLO6wMsk7GQJxu0=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-JPGENKP\SERVER2017</TargetServer>
+        <TargetDatabase>CUBO_VENTAS</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

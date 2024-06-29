@@ -26,8 +26,8 @@ CREATE TABLE DimTiempo (
     Año INT,
     Mes INT,
     Día INT,
-    NombreMes NVARCHAR(20),
-    NombreDia NVARCHAR(20)
+    NombreMes NVARCHAR(30),
+    NombreDia NVARCHAR(30)
 );
 
 -- Dimensión Territorio de Ventas
