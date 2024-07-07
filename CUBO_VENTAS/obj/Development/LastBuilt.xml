@@ -1,52 +1,27 @@
 ﻿<Infos>
-  <Item name="Data Mart Ventas.partitions">
-    <Time>638552699603622443</Time>
+  <Item name="Data Mart Ventas.cube">
+    <Time>638552701264064176</Time>
     <Hash length="20">
-      <b>207</b>
-      <b>172</b>
-      <b>67</b>
-      <b>199</b>
-      <b>39</b>
-      <b>81</b>
-      <b>123</b>
-      <b>191</b>
-      <b>162</b>
-      <b>17</b>
-      <b>169</b>
-      <b>235</b>
-      <b>200</b>
-      <b>143</b>
-      <b>249</b>
-      <b>40</b>
-      <b>185</b>
-      <b>162</b>
-      <b>34</b>
-      <b>15</b>
-    </Hash>
-  </Item>
-  <Item name="Dim Cliente.dim">
-    <Time>638552701116364118</Time>
-    <Hash length="20">
-      <b>26</b>
-      <b>11</b>
-      <b>174</b>
-      <b>15</b>
-      <b>77</b>
-      <b>49</b>
-      <b>222</b>
-      <b>182</b>
-      <b>235</b>
-      <b>23</b>
-      <b>99</b>
-      <b>179</b>
+      <b>69</b>
       <b>75</b>
-      <b>107</b>
-      <b>91</b>
-      <b>199</b>
-      <b>205</b>
-      <b>198</b>
-      <b>233</b>
-      <b>117</b>
+      <b>120</b>
+      <b>135</b>
+      <b>106</b>
+      <b>223</b>
+      <b>253</b>
+      <b>146</b>
+      <b>120</b>
+      <b>108</b>
+      <b>245</b>
+      <b>237</b>
+      <b>134</b>
+      <b>144</b>
+      <b>105</b>
+      <b>87</b>
+      <b>14</b>
+      <b>239</b>
+      <b>175</b>
+      <b>158</b>
     </Hash>
   </Item>
   <Item name="Dim Tiempo.dim">
@@ -74,54 +49,29 @@
       <b>41</b>
     </Hash>
   </Item>
-  <Item name="Data Mart Ventas.cube">
-    <Time>638552701264064176</Time>
+  <Item name="Data Mart Ventas.partitions">
+    <Time>638552699603622443</Time>
     <Hash length="20">
-      <b>69</b>
-      <b>75</b>
-      <b>120</b>
-      <b>135</b>
-      <b>106</b>
-      <b>223</b>
-      <b>253</b>
-      <b>146</b>
-      <b>120</b>
-      <b>108</b>
-      <b>245</b>
-      <b>237</b>
-      <b>134</b>
-      <b>144</b>
-      <b>105</b>
-      <b>87</b>
-      <b>14</b>
-      <b>239</b>
-      <b>175</b>
-      <b>158</b>
-    </Hash>
-  </Item>
-  <Item name="CUBO_VENTAS.database">
-    <Time>638550326354173660</Time>
-    <Hash length="20">
-      <b>76</b>
+      <b>207</b>
+      <b>172</b>
+      <b>67</b>
+      <b>199</b>
+      <b>39</b>
+      <b>81</b>
+      <b>123</b>
+      <b>191</b>
+      <b>162</b>
+      <b>17</b>
+      <b>169</b>
+      <b>235</b>
+      <b>200</b>
+      <b>143</b>
+      <b>249</b>
+      <b>40</b>
+      <b>185</b>
+      <b>162</b>
+      <b>34</b>
       <b>15</b>
-      <b>55</b>
-      <b>240</b>
-      <b>63</b>
-      <b>112</b>
-      <b>22</b>
-      <b>64</b>
-      <b>231</b>
-      <b>132</b>
-      <b>255</b>
-      <b>77</b>
-      <b>246</b>
-      <b>240</b>
-      <b>223</b>
-      <b>233</b>
-      <b>188</b>
-      <b>98</b>
-      <b>190</b>
-      <b>8</b>
     </Hash>
   </Item>
   <Item name="Data Mart Ventas.dsv">
@@ -149,6 +99,31 @@
       <b>148</b>
     </Hash>
   </Item>
+  <Item name="CUBO_VENTAS.database">
+    <Time>638550326354173660</Time>
+    <Hash length="20">
+      <b>76</b>
+      <b>15</b>
+      <b>55</b>
+      <b>240</b>
+      <b>63</b>
+      <b>112</b>
+      <b>22</b>
+      <b>64</b>
+      <b>231</b>
+      <b>132</b>
+      <b>255</b>
+      <b>77</b>
+      <b>246</b>
+      <b>240</b>
+      <b>223</b>
+      <b>233</b>
+      <b>188</b>
+      <b>98</b>
+      <b>190</b>
+      <b>8</b>
+    </Hash>
+  </Item>
   <Item name="Dim Producto.dim">
     <Time>638552700963112830</Time>
     <Hash length="20">
@@ -172,6 +147,31 @@
       <b>42</b>
       <b>222</b>
       <b>59</b>
+    </Hash>
+  </Item>
+  <Item name="Dim Cliente.dim">
+    <Time>638552701116364118</Time>
+    <Hash length="20">
+      <b>26</b>
+      <b>11</b>
+      <b>174</b>
+      <b>15</b>
+      <b>77</b>
+      <b>49</b>
+      <b>222</b>
+      <b>182</b>
+      <b>235</b>
+      <b>23</b>
+      <b>99</b>
+      <b>179</b>
+      <b>75</b>
+      <b>107</b>
+      <b>91</b>
+      <b>199</b>
+      <b>205</b>
+      <b>198</b>
+      <b>233</b>
+      <b>117</b>
     </Hash>
   </Item>
   <Item name="Dim Territorio.dim">
